@@ -26,17 +26,17 @@ function Viewcustomer() {
     console.log(data);
      setData(
        data.map((item) => {
+        let lastStayed = (item.stayDetails.splice(item.stayDetails.length-1,item.stayDetails.length))["endDate"];
         return (
-         
           <div className="card card-1 c1 p-5 ">
             <div className="row">
               <div className="col-6">
                 <h5 className="p-1">Name: {item.name}</h5>
                 <h5 className="p-1">Aadhar: {item.aadhar}</h5>
-                <h5 className="p-1">Phone Number: {item.phoneNumber}</h5>
               </div>
               <div className="col-6">
-              {/*<h5 className="p-1">Stay Details: {item.stayDetails}</h5>*/}
+              <h5 className="p-1">Phone Number: {item.phoneNumber}</h5>
+              <h5 className="p-1">Last Stayed: {lastStayed}</h5>
               </div>
             </div>
           </div>

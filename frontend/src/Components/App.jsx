@@ -8,6 +8,7 @@ import Home from "./home";
 import CustomerQuery from "./customerQuery";
 import Views from "./DateQuery";
 import Viewcustomer from "./viewCustomer";
+import ForgotPassword from "./ForgotPassword";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/customer-query" element={<PrivateRoute> <CustomerQuery /> </PrivateRoute>} />
             <Route path="/viewdate" element={<PrivateRoute> <Views /> </PrivateRoute>} />
             <Route path="/viewcustomer" element={<PrivateRoute> <Viewcustomer /> </PrivateRoute>} />
+          <Route path="/forgotpw" element={ <ForgotPassword/> }/>
           </Routes>
         </AuthProvider>
       </Router>

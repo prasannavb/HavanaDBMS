@@ -12,14 +12,21 @@ function Footer() {
                                 <i id="font" className="fas fa-gem me-3 "></i>HAVANA
                             </h6>
                             <p>@copyrights PLSQUARED+M</p>
-                               
+                            <address>
+                             7 3/4, 
+                                221b, Baker Street,
+                                Dubai Kurukku Sandhu,
+                                West Udumalaipet,
+                                India-vin florida,
+                                Madurai 501050.
+                            </address>
                         </div>
                         <div id="text-company" className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                             <h6 className="text-uppercase fw-bold mb-4" id="contact">Contact</h6>
                             <p><i id="font" className="fas fa-home me-3 "></i> PLATFORM SVCE</p>
                             <p>
                                 <i id="font" className="fas fa-envelope me-3 "></i>
-                                plsquared@gmail.com
+                                plsquared04@gmail.com
                             </p>
                             <p><i id="font" className="fas fa-phone me-3 "></i> + 91944556688 </p>
                             <p><i id="font" className="fas fa-print me-3 "></i> + 01 234 567 89</p>

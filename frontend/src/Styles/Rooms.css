@@ -94,3 +94,7 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+code {
+    color: green;
+}

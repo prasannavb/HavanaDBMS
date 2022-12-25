@@ -1,7 +1,12 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import '../Styles/Rooms.css';
+import singlephoto from "../Assets/single.jpg";
+import doublephoto from "../Assets/double.jpg";
+import deluxephoto from "../Assets/deluxe.jpg";
+import superdeluxephoto from "../Assets/superdeluxe.jpg";
+import suitephoto from "../Assets/suite.jpg";
+import villaphoto from "../Assets/villa.jpg";
+
 
 function RoomDetails() {
     const [style, setStyle] = useState("form");
@@ -101,15 +106,15 @@ function RoomDetails() {
                         <div className="col-12 col-md-6 col-lg-4">
                             <div className="card">
                                 <img
-                                    src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    src={singlephoto}
                                     className="card-img-top" alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title">Solo</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
+                                    <h5 className="card-title">Hans Solo</h5>
+                                    <p className="card-text">Stay single, stay cozy!Our comfortable single rooms are just the right size if you are travelling alone.<br/>
+                                     Starting at <code>$100/day</code></p>
                                     <div className="d-flex justify-content-end btn-group">
-                                        <button className="btn btn-info" onClick={(evt) => { evt.preventDefault(); change_Style("open"); setcustDetails({ ...custDetails, type: "single", amt: 100 }); }}>BOOK NOW</button>
-                                        <button className="btn btn-primary" onClick={(evt) => { evt.preventDefault(); change_Style("open") }}>VIEW</button>
+                                        <button className="btn btn-primary" onClick={(evt) => { evt.preventDefault(); change_Style("open"); setcustDetails({ ...custDetails, type: "single", amt: 100 }); }}>BOOK NOW</button>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -117,15 +122,14 @@ function RoomDetails() {
                         <div className="col-12 col-md-6 col-lg-4">
                             <div className="card">
                                 <img
-                                    src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    src={doublephoto}
                                     className="card-img-top" alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title">Twin</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
+                                    <h5 className="card-title">Twin Turbines</h5>
+                                    <p className="card-text">Bigger rooms with upgraded amenities & nicer view. Suitable for groups needing more space, like a couple or small family. Starting at <code>$150/day</code></p>
                                     <div className="d-flex justify-content-end btn-group">
-                                        <button className="btn btn-info" onClick={(evt) => { evt.preventDefault(); change_Style("open"); setcustDetails({ type: "double", amt: 150 }) }}>BOOK NOW</button>
-                                        <button className="btn btn-primary" onClick={(evt) => { evt.preventDefault(); change_Style("open") }}>VIEW</button>
+                                        <button className="btn btn-primary" onClick={(evt) => { evt.preventDefault(); change_Style("open"); setcustDetails({ type: "double", amt: 150 }) }}>BOOK NOW</button>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -133,15 +137,15 @@ function RoomDetails() {
                         <div className="col-12 col-md-6 col-lg-4">
                             <div className="card">
                                 <img
-                                    src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    src={deluxephoto}
                                     className="card-img-top" alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title">Deluxe</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
+                                    <h5 className="card-title">La Deluxia</h5>
+                                    <p className="card-text">
+                                    Deluxe are spacious & have a cozy and charming vintage vibe. Designed for a homely stay,it boasts of a warm upholstery. Starting at <code>$250/day</code></p>
                                     <div className="d-flex justify-content-end btn-group">
-                                        <button className="btn btn-info" onClick={(evt) => { evt.preventDefault(); change_Style("open"); setcustDetails({ ...custDetails, type: "deluxe", amt: 250 }) }}>BOOK NOW</button>
-                                        <button className="btn btn-primary" onClick={(evt) => { evt.preventDefault(); change_Style("open") }}>VIEW</button>
+                                        <button className="btn btn-primary" onClick={(evt) => { evt.preventDefault(); change_Style("open"); setcustDetails({ ...custDetails, type: "deluxe", amt: 250 }) }}>BOOK NOW</button>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -149,15 +153,13 @@ function RoomDetails() {
                         <div className="col-12 col-md-6 col-lg-4">
                             <div className="card">
                                 <img
-                                    src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    src={superdeluxephoto}
                                     className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Super Deluxe</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
+                                    <p className="card-text">Super Deluxe rooms have two double beds. Both bunk style & twin style beds available with a seperate butler,just for you! Starting at <code>$400/day</code></p>
                                     <div className="d-flex justify-content-end btn-group">
-                                        <button className="btn btn-info" onClick={(evt) => { evt.preventDefault(); change_Style("open"); setcustDetails({ ...custDetails, type: "superDeluxe", amt: 400 }) }}>BOOK NOW</button>
-                                        <Link className="btn btn-primary" to="/query">VIEW</Link>
+                                        <button className="btn btn-primary" onClick={(evt) => { evt.preventDefault(); change_Style("open"); setcustDetails({ ...custDetails, type: "superDeluxe", amt: 400 }) }}>BOOK NOW</button>
                                     </div>
                                 </div>
                             </div>
@@ -165,15 +167,17 @@ function RoomDetails() {
                         <div className="col-12 col-md-6 col-lg-4">
                             <div className="card">
                                 <img
-                                    src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    src={suitephoto}
                                     className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Suite</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
+                                    <p className="card-text">
+                                    Experience the good in life with two spacious bed rooms, an elegant living room, a workstation  with all essentials.
+                                    Starting at <code>$700/day</code>
+                                    </p>
                                     <div className="d-flex justify-content-end btn-group">
-                                        <button className="btn btn-info" onClick={(evt) => { evt.preventDefault(); change_Style("open"); setcustDetails({ ...custDetails, type: "suite", amt: 700 }) }}>BOOK NOW</button>
-                                        <button className="btn btn-primary" onClick={(evt) => { evt.preventDefault(); change_Style("open") }}>VIEW</button>
+                                        <button className="btn btn-primary" onClick={(evt) => { evt.preventDefault(); change_Style("open"); setcustDetails({ ...custDetails, type: "suite", amt: 700 }) }}>BOOK NOW</button>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -181,15 +185,14 @@ function RoomDetails() {
                         <div className="col-12 col-md-6 col-lg-4">
                             <div className="card">
                                 <img
-                                    src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    src={villaphoto}
                                     className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Villa</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                        content.</p>
+                                    <p className="card-text">Stand-alone houses offering maximum privacy and comfort with multiple bedrooms,  and access to a private beach. Starting at <code>$1000/day</code></p>
                                     <div className="d-flex justify-content-end btn-group">
-                                        <button className="btn btn-info" onClick={(evt) => { evt.preventDefault(); change_Style("open"); setcustDetails({ ...custDetails, type: "villa", amt: 1000 }) }}>BOOK NOW</button>
-                                        <button className="btn btn-primary" onClick={(evt) => { evt.preventDefault(); change_Style("open") }}>VIEW</button>
+                                        <button className="btn btn-primary" onClick={(evt) => { evt.preventDefault(); change_Style("open"); setcustDetails({ ...custDetails, type: "villa", amt: 1000 }) }}>BOOK NOW</button>
+                                       
                                     </div>
                                 </div>
                             </div>
