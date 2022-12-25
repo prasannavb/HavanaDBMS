@@ -1,9 +1,9 @@
 import React from "react";
-import Image1 from '../Assets/Hotel-view1.jpg';
-import Image2 from '../Assets/Hotel-view2.jpg';
-import Image3 from '../Assets/Hotel-view3.jpg';
-import Image4 from '../Assets/Hotel-view4.jpg';
-import Image5 from '../Assets/Hotel-view.jpg';
+import Image1 from '../Assets/bgimg.jpg';
+import Image2 from '../Assets/bgimg.jpg';
+import Image3 from '../Assets/bgimg.jpg';
+import Image4 from '../Assets/bgimg.jpg';
+import Image5 from '../Assets/bgimg.jpg';
 
 
 function Carousel() {

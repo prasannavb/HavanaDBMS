@@ -18,7 +18,7 @@ function NavBar() {
         
       }
     }
-    console.log(remail);
+    console.log("EMAIL ID:\t",remail);
     console.log(ruid);
   
       

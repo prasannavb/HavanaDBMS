@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../Assets/Image (1).png";
+import Image from "../Assets/hotelbg.jpeg";
 import "../Styles/reviews.css";
 
 function Reviews() {

@@ -77,7 +77,7 @@ function RoomDetails() {
             }]
         };
       
-        fetch(`${window.location.href}/api/bookRoom`, {
+        fetch(`${window.location.origin}/api/bookRoom`, {
             headers: {
                 "Content-type": "application/json"
             },

@@ -14,7 +14,7 @@ function CustomerQuery() {
 
 
     useEffect(async() => {
-            const data1 = await fetch(`${window.location.href}/api/readt`);
+            const data1 = await fetch(`${window.location.origin}/api/readt`);
             const full = await data1.json()
             console.log(full);
             setQuery(full);
@@ -26,7 +26,7 @@ function CustomerQuery() {
         const date = new Date();
         const det = {"type":type.current.value,"roomID":String(roomNo),"Ticket":issue.current.value,"status":"In Progress","date":date,"description":issueDesc};
         console.log(det);
-         await fetch(`${window.location.href}/api/raiseticket`,{
+         await fetch(`${window.location.origin}/api/raiseticket`,{
             headers : {
               "Content-type" : "application/json"
             },

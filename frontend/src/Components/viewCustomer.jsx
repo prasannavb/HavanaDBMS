@@ -14,7 +14,8 @@ function Viewcustomer() {
       type: type.current.value,
       detail:ip.current.value ,
     };
-    await fetch(`${window.location.href}/api/viewcustomer`, {
+    var winLOC = window.location.origin;
+    await fetch(`${winLOC}/api/viewcustomer`, {
       headers: {
         "Content-type": "application/json",
       },

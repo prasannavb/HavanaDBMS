@@ -14,7 +14,7 @@ export default function Login() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    console.log(login);
+    console.log("CHECKING IF UPDATES ARE HAPPENING",login);
 
     try {
       setError("");

@@ -24,6 +24,9 @@ const mongopw = process.env.DBPW;
 
 mongoose.connect(`mongodb+srv://PLSM:${mongopw}@cluster0.fx6xecm.mongodb.net/login?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
     console.info("Connected to mongoDB");
+    app.listen(PORT, () => {
+    console.log("Listening on Port!",PORT);
+}); 
 }).catch((err) => {
     console.log("Error! : ",err);
 })      
@@ -94,6 +97,3 @@ app.get("*", function (_, res) {
   );
 });
 
-app.listen(PORT, () => {
-    console.log("Listening on Port!",PORT);
-}); 

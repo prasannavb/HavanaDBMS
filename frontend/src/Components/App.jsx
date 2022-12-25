@@ -12,7 +12,7 @@ import Viewcustomer from "./viewCustomer";
 function App() {
   return (
     <div>
-      <Router>
+      <Router basename="/">
         <AuthProvider>
           <Routes>
             <Route path="/login" element={<Login />} />

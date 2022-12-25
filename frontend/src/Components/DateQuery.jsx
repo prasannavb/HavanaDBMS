@@ -13,7 +13,7 @@ function Views() {
       roomType: type.current.value,
       reqdDate: new Date(date),
     };
-    await fetch(`${window.location.href}/api/viewdate`, {
+    await fetch(`${window.location.origin}/api/viewdate`, {
       headers: {
         "Content-type": "application/json",
       },
