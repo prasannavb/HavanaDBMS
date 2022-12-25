@@ -14,8 +14,7 @@ function Viewcustomer() {
       type: type.current.value,
       detail:ip.current.value ,
     };
-    var winLOC = window.location.origin;
-    await fetch(`${winLOC}/api/viewcustomer`, {
+    await fetch(`${window.location.origin}/api/viewcustomer`, {
       headers: {
         "Content-type": "application/json",
       },
@@ -29,7 +28,7 @@ function Viewcustomer() {
        data.map((item) => {
         return (
          
-          <div className="card c1 p-5 ">
+          <div className="card card-1 c1 p-5 ">
             <div className="row">
               <div className="col-6">
                 <h5 className="p-1">Name: {item.name}</h5>

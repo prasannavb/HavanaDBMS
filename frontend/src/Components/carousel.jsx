@@ -1,48 +1,46 @@
 import React from "react";
-import Image1 from '../Assets/bgimg.jpg';
-import Image2 from '../Assets/bgimg.jpg';
-import Image3 from '../Assets/bgimg.jpg';
-import Image4 from '../Assets/bgimg.jpg';
-import Image5 from '../Assets/bgimg.jpg';
+import Image1 from '../Assets/Hotel-view1.jpg';
+import Image2 from '../Assets/Hotel-view2.jpg';
+import Image3 from '../Assets/Hotel-view3.jpg';
+import havanna from '../Assets/hvna1.jpeg';
 
 
 function Carousel() {
     return (
-        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-            <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
-            <div className="carousel-inner ">
-                <div className="carousel-item active" >
-                    <img src={Image1} className="d-block w-100 h-50" alt="..." />
-                </div>
-                <div className="carousel-item">
-                    <img src={Image2} className="d-block w-100 h-50" alt="..." />
-                </div>
-                <div className="carousel-item">
-                    <img src={Image3} className="d-block w-100 h-50" alt="..." />
-                </div>
-                <div className="carousel-item active" >
-                    <img src={Image4} className="d-block w-100 h-50" alt="..." />
-                </div>
-                <div className="carousel-item">
-                    <img src={Image5} className="d-block w-100 h-50" alt="..." />
-                </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-            </button>
-        </div>
-    );
+        <div className="w-100 p-5"><div className=""> <img className="w-50 float-right" src={havanna}></img></div>
+        <div className="w-50">
+                  
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src={Image1} className="d-block w-100 h-50" alt="..." />
+    </div>
+    <div class="carousel-item">
+    <img src={Image2} className="d-block w-100 h-45" alt="..." />
+    </div>
+    <div class="carousel-item">
+    <img src={Image3} className="d-block w-100 h-50" alt="..." />
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  
+</div>
+
+</div>
+</div>
+)
 }
 
 export default Carousel;
