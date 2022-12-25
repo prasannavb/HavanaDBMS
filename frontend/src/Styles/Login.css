@@ -1,0 +1,112 @@
+#page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    background-image: url("../Assets//havana.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#outer {
+    margin-left: 10%;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 3%;
+    height: 60%;
+    width: 40%;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#team-title {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 48px;
+    color: white;
+    text-decoration: underline;
+}
+
+#form-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#email-text,#pw-text {
+    font-weight: 600;
+    font-size: 24px;
+    color: lightseagreen;
+}
+
+#email-box,#pw-box {
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    min-height: 20px;
+    border-radius: 8px;
+    border: 5px solid transparent; 
+    outline: none;
+}
+
+#email-box:focus, #pw-box:focus {
+    border: 5px solid black; 
+    outline: none;
+}
+
+
+#submit-btn {
+    margin-top: 5%;
+    align-self: center;
+    width: 40%;
+    border: none;
+    background-color: white;
+    transition-duration: 600ms;
+    border-radius: 8px;
+    font-size: x-large;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+    font-weight: 900;
+}
+
+#submit-btn:hover {
+    scale: 1.05;
+    box-shadow: 5px 5px 5px 0px #000;
+    background-color: black;
+    color: white;
+}
+
+#forgot-pw {
+    margin-top:2%;
+    text-align: right;
+    color: white;
+}
+
+#loginerr {
+    position: relative;
+    top: 42.5%;
+    left: 22.5%;
+    width: 25%;
+    text-align: center;
+    border: 2px solid red;
+    font-size: large;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}

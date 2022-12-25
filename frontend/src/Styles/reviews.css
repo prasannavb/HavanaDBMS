@@ -1,0 +1,27 @@
+.review-heading {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 300%;
+    padding: 1%;
+    border-left-width: 0ch;
+    border-right-width: 0ch;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-style: solid;
+    text-align: center;
+}
+
+.review-cards{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    margin-top: 3%;
+}
+
+.review-card-img{
+    position: relative;
+    left: 35%;
+    width: 25%;
+    background-color: aliceblue;
+    font-size: 600%;
+}

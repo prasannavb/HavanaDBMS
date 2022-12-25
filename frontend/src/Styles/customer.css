@@ -1,0 +1,49 @@
+.container{
+    height: 100%;
+}
+.issue-container-blur{
+    opacity: 0.1;
+}
+.complain{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+.add{
+    width: 7%;
+    font-size: 300%;
+    border-radius: 100%;
+    position: fixed;
+    top: 80%;
+    left: 90%;
+}
+
+.icon{
+    width: 10%;
+    font-size: 300%;
+}
+.issue-details{
+    width: 80%;
+}
+
+.form-inactive{
+    position: fixed;
+    top: -100%;
+    left: 12%;
+}
+.form-active{
+    width: 75%;
+    height: 50%;
+    position: fixed;
+    top: 25%;
+    left: 12%;
+    transition: all 1s ease-in;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    row-gap: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+.submit{
+    position: relative;
+    left: 75%;
+}

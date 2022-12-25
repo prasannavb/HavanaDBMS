@@ -1,0 +1,41 @@
+#page2{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Assets/bgimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:0%;
+    padding:1%;
+}
+.input-controls{
+    width: 100%;
+    height: 10%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.view-date{
+    width: 25%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.view-select-form{
+    width: 25%;
+    border-radius: 5px/3px;
+    font-weight: bold;
+}
+
+.card{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    margin-top: 1%;
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.2);
+    color:black;
+    font-weight: bolder;
+}
+.btn{
+    width: 10%;
+}
