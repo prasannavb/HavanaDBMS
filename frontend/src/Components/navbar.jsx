@@ -52,7 +52,7 @@ function NavBar() {
                             <a className="nav-link active" aria-current="page" href="#room">Rooms</a>
                         </li>
                         <li id="nav-margin" className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Contact</a>
+                            <a className="nav-link active" aria-current="page" href="#contact">Contact</a>
                         </li>
                         <li id="nav-margin" className="nav-item">
                             <a className="nav-link" onClick={handleLogout}>Logout</a>

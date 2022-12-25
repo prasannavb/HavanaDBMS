@@ -15,7 +15,7 @@ function Footer() {
                                
                         </div>
                         <div id="text-company" className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+                            <h6 className="text-uppercase fw-bold mb-4" id="contact">Contact</h6>
                             <p><i id="font" className="fas fa-home me-3 "></i> PLATFORM SVCE</p>
                             <p>
                                 <i id="font" className="fas fa-envelope me-3 "></i>
