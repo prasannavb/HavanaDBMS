@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "../Styles/DateQuery.css";
 
 
@@ -25,8 +25,7 @@ function Views() {
     console.log(data);
       setData(
       data.map((item) => {
-        return (
-         
+        return (  
           <div className="card c1 p-5">
             <div className="row">
               <div className="col-6">
