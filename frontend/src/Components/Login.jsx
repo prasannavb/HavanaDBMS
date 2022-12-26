@@ -45,9 +45,6 @@ export default function Login() {
                 Log In
               </button>
             </form>
-            <div id="forgot-pw">
-              <Link to="/forgot-password">Forgot Password?</Link>
-            </div>
           </div>
         </div>
       </div>
