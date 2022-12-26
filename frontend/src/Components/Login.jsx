@@ -14,7 +14,7 @@ export default function Login() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    console.log("CHECKING IF UPDATES ARE HAPPENING",login);
+    console.log(login);
 
     try {
       setError("");
@@ -23,7 +23,6 @@ export default function Login() {
       history("/");
     } catch {
       setError("Failed to log in");
-      setTimeout(() => {setError("")},5000);
     }
 
     setLoading(false);
@@ -32,25 +31,26 @@ export default function Login() {
   return (
     <div id="page">
       <div id="outer">
-        <h1 id="team-title">Staff Portal</h1>
+        <h1 id="team-title">PL SQUARED</h1>
         <div id="form-outer">
           <div id="form-outer-body" >
+            <h2 id="login-text">Log In</h2>
+            {error && <div className="alert alert-danger" role="alert">{error}</div>}
             <form onSubmit={handleSubmit} id="form-body">
-               <label id="email-text">EMAIL:</label>
+               <label id="email-text">Email</label>
                 <input id="email-box" type="email" ref={emailRef} required />
-                <label id="pw-text">PASSWORD:</label>
+                <label id="pw-text">Password</label>
                 <input id="pw-box" type="password" ref={passwordRef} required />
               <button disabled={loading} id="submit-btn" type="submit">
-                LOG IN
+                Log In
               </button>
             </form>
             <div id="forgot-pw">
-              <Link to="/forgotpw">Forgot Password?</Link>
+              <Link to="/forgot-password">Forgot Password?</Link>
             </div>
           </div>
         </div>
       </div>
-      {error && <div id="loginerr" className="alert alert-danger" role="alert">{error}</div>}
     </div>
   
   
