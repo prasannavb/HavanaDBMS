@@ -23,7 +23,7 @@ const PORT = process.env.PORT || 5000;
 const mongopw = process.env.DBPW;
 
 mongoose.connect(`mongodb+srv://PLSM:${mongopw}@cluster0.fx6xecm.mongodb.net/login?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
-    console.info("Connected to mongoDB");
+    console.info("Connected to mongoDB successfully!");
     app.listen(PORT, () => {
     console.log("Listening on Port!",PORT);
 }); 
@@ -96,4 +96,5 @@ app.get("*", function (_, res) {
     }
   );
 });
+
 
