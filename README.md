@@ -37,8 +37,7 @@ The Hotel Management System is designed to streamline and automate hotel operati
 <li><b>API Management Creation:</b> Includes tools and platforms used for creating and managing APIs to facilitate communication between different software applications.</li>
 <li><b>Firebase Authentication:</b> A service provided by Firebase for authenticating users and managing user sessions securely.</li>
 <li><b>Firebase Storage:</b> A cloud storage service provided by Firebase for storing images, including car and profile images.</li>
-<li><b>Netlify:</b> A cloud platform for hosting static websites, including client-side applications.</li>
-<li><b>Vercel:</b> A cloud platform for hosting serverless functions and full-stack applications, including server-side applications.</li>
+<li><b>Cyclic:</b> A cloud platform for hosting  websites, including client-side applications.</li>
 </ul>
 
 
